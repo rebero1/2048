@@ -5,10 +5,9 @@ import java.util.*;
 
 import javax.swing.*;
 
-
 public class GameShell extends JPanel implements KeyListener {
 	private static final long serialVersionUID = 1L;
-     int keypressed=0;
+        int keypressed=0;
 	Font font;
 	int[][] array;
 	int sizeArr =4;
@@ -386,11 +385,7 @@ else{
 
 /** quit the game**/
 public void shutdown(){
-
-
 	int response=	JOptionPane.showConfirmDialog(new JFrame().getContentPane(),"Do you want to quit the game?");
-
-
 	if(response==0){
 
 
@@ -416,14 +411,8 @@ public boolean array_same(){
 	}
 
 
-
-
 	return true;
 }
-
-
-
-
 
 	/** Called when the user wins**/
 
@@ -444,9 +433,6 @@ public void winning(){
 
 
 	}
-
-
-
 	public int maxfunc(){
 		int maxValue = array[0][0];
 		for (int j = 0; j < 4; j++) {
@@ -480,11 +466,7 @@ beginning=true;
  		for (int i = 0; i < 4; i++)
 			for (int j = 0; j <4 ; j++)
 				array[i][j]=0;
-
-
-
-
- 			keypressed=0;
+		keypressed=0;
 
 
 	repaint();
